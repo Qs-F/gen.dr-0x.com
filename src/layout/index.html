@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .lang }}">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://v1.css.dr-0x.com/g.css">
+  <link rel="stylesheet" href="https://v1.css.dr-0x.com/area.css">
+  <link rel="stylesheet" href="https://v1.css.dr-0x.com/text.css">
+  <link rel="stylesheet" href="/assets/css/g.css">
+  <title>{{ .title }}</title>
+  <script src="http://localhost:35730/livereload.js"></script>
+</head>
+<body>
+  <header style="--bg: url({{ .site.logo }})">
+    <h1><img src="{{ .site.logotype }}" alt="gen"></h1>
+  </header>
+  <article>
+{{ .__content__ }}
+  </article>
+</body>
+</html>
