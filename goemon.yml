@@ -1,0 +1,6 @@
+livereload: :35730
+tasks:
+- match: './src/**/*'
+  commands:
+  - make build
+  - :livereload /
