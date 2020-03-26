@@ -3,9 +3,9 @@
 A website for cmd `gen`, generated with `gen`.
 
 
-## Requirement
+## Requirements
 
-## cmd `gen`
+### cmd `gen`
 
 ```
 $ GO111MODILE=off go get -u github.com/Qs-F/gen
