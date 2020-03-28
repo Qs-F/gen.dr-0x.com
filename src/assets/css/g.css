@@ -1,12 +1,19 @@
 body,
 html {
+  --theme: #03A0C8;
+  --content-width: 640px;
+  background-color: var(--whitish);
+  color: var(--blackish);
   height: 100%;
-  font-family: var(--fonts);
+  font-family: 'Inter', var(--fonts);
+  font-weight: 900;
+  font-size: var(--font-size-text);
 }
 
 header {
+  --bg: var(--site-logo);
   background-image: var(--bg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 160%;
   display: flex;
@@ -16,5 +23,84 @@ header {
 
 header>h1>img {
   margin-top: 48vh;
-  width: 256px;
+  width: 128px;
+}
+
+article,
+footer {
+  font-weight: 400;
+  max-width: var(--content-width);
+  padding: 0 var(--page-margin);
+  margin: 0 auto 64px auto;
+}
+
+article {
+  margin-top: -480px;
+}
+
+article * {
+  letter-spacing: .08em;
+  line-height: 1.6em;
+}
+
+article h2 {
+  font-size: var(--font-size-impact);
+  font-weight: 700;
+  letter-spacing: .32em;
+  margin-bottom: .6em;
+}
+
+article h3 {
+  font-size: var(--font-size-title);
+  font-weight: 400;
+  margin-bottom: .6em;
+}
+
+article hr {
+  display: none;
+}
+
+article hr+* {
+  margin-top: 64px;
+}
+
+article p {
+  margin-bottom: .6em;
+}
+
+article hr+h3 {
+  background-color: var(--theme);
+  border-radius: 2px;
+  color: var(--whitish);
+  display: inline-block;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 0 32px;
+}
+
+article code {
+  background-color: var(--blackish);
+  border-radius: 2px;
+  color: var(--whitish);
+  display: block;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 16px 32px;
+}
+
+article a {
+  color: var(--theme);
+}
+
+article li {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-bottom: .6em;
+}
+
+article li::before {
+  color: var(--theme);
+  content: "*";
+  padding-right: var(--page-margin);
 }
