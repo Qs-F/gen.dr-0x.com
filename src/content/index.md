@@ -4,7 +4,28 @@ site:
   - src/content/common/site.md
 lang: en
 layout: src/layout/index.html
-title: gen - A static site generating tool
+title: gen - A static site generator
 ---
 
-gen is a command line tool to generate static website.
+## GEN.
+
+### A CLI Tool for Static Websites.
+
+---
+
+### Installation
+
+`$ go get -u github.com/Qs-F/gen`
+
+---
+
+### Features
+
+- Variables Expansion
+- Import other markdown's variables (front matter)
+
+---
+
+### Repository
+
+[GitHub](https://github.com/Qs-F/gen)
